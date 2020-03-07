@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CoronaDoctor.Views.DiagnosisPage">
+    <StackLayout>
+        <ListView  x:Name="checkList" ItemsSource="{Binding CheckingList}"
+                   ItemSelected="checkList_ItemSelected"
+                   HasUnevenRows="True" SeparatorVisibility="None"
+                   ItemTapped="checkList_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal" >
+                                <CheckBox x:Name="checkbox" CheckedChanged="checkbox_CheckedChanged"  VerticalOptions="Center" IsChecked="{Binding IsChecked}" HorizontalOptions="Start"></CheckBox>
+                                <Label FontSize="Subtitle" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Text="{Binding Detail}"></Label>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Margin="20" VerticalOptions="EndAndExpand" 
+                x:Name="btnGetDiagnosis"
+                 Clicked="btnGetDiagnosis_Clicked"
+                HorizontalOptions="CenterAndExpand" 
+               BackgroundColor="DarkBlue" TextColor="White" 
+                Text="Get Diagnosis report" ></Button>
+    </StackLayout>
+</ContentPage>

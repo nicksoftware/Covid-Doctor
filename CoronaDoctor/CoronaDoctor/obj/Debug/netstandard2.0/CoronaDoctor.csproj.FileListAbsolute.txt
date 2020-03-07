@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\bin\Debug\netstandard2.0\CoronaDoctor.deps.json
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\bin\Debug\netstandard2.0\CoronaDoctor.dll
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\bin\Debug\netstandard2.0\ref\CoronaDoctor.dll
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\bin\Debug\netstandard2.0\CoronaDoctor.pdb
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\Views\DiagnosisPage.xaml.g.cs
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\Views\HomePage.xaml.g.cs
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\CoronaDoctor.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\CoronaDoctor.AssemblyInfo.cs
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\CoronaDoctor.dll
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\ref\CoronaDoctor.dll
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\CoronaDoctor.pdb
+C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\obj\Debug\netstandard2.0\CoronaDoctor.csprojAssemblyReference.cache
