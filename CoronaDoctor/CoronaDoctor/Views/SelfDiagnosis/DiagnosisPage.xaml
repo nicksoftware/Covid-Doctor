@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:controls="clr-namespace:CoronaDoctor.Controls;assembly=CoronaDoctor"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+          
+             xmlns:ad1="clr-namespace:CoronaDoctor"
+             mc:Ignorable="d"
+         
+             NavigationPage.HasNavigationBar="False"
+             x:Class="CoronaDoctor.Views.DiagnosisPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ControlTemplate>
+        <ControlTemplate>
+            <StackLayout x:Name="rootLayout" Spacing="0">
+
+                <!--  Title View  -->
+                <controls:TitleView
+                    Title="Covid Doctor"
+                    FontFamily="{StaticResource Montserrat-Medium}"
+                    FontSize="16">
+                    <controls:TitleView.LeadingView>
+                        <buttons:SfButton
+                            x:Name="backButton"
+                            CornerRadius="4"
+                            Clicked="backButton_Clicked"
+                            Style="{StaticResource IconButtonStyle}"
+                            Text="{StaticResource Back}" />
+                    </controls:TitleView.LeadingView>
+
+                </controls:TitleView>
+
+                <ContentPresenter />
+
+            </StackLayout>
+        </ControlTemplate>
+    </ContentPage.ControlTemplate>
+    <StackLayout Spacing="0" Padding="0">
+        <ListView  x:Name="checkList" ItemsSource="{Binding CheckingList}"
+                   ItemSelected="checkList_ItemSelected"
+                   Margin="10,5,10,0"
+                   VerticalScrollBarVisibility="Never"
+                   HasUnevenRows="True" SeparatorVisibility="None"
+                   ItemTapped="checkList_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <cards:SfCardView CornerRadius="4" Margin="1" IndicatorColor="{Binding BackgroundGradientStart}" IndicatorPosition="Bottom" IndicatorThickness="0">
+                                <Grid  RowSpacing="4" Padding="16">
+
+                                    <!--<Label Grid.Column="0" Grid.RowSpan="2" FontSize="16" Style="{StaticResource LabelStyle}" HorizontalOptions="Start" VerticalOptions="Center" Text="{Binding Country}"></Label>-->
+
+                                    <CheckBox x:Name="checkbox" Grid.Column="0" Color="{DynamicResource PrimaryColor }"  CheckedChanged="checkbox_CheckedChanged"   IsChecked="{Binding IsChecked}" ></CheckBox>
+                                    <!--<Label FontSize="Subtitle" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Text="{Binding Title}"></Label>-->
+                                    <Label  Grid.Column="1" Grid.RowSpan="1"  Text="{Binding Title ,StringFormat='{0}'}"></Label>
+       
+                                </Grid>
+
+                            </cards:SfCardView>
+                     
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <buttons:SfButton x:Name="btnGetDiagnosis" Clicked="btnGetDiagnosis_Clicked"  BackgroundColor="{DynamicResource PrimaryColor }"
+                          Text="Get Diagnosis report"  Padding="12"
+                          CornerRadius="20"
+                          Margin="10,20,10,10" VerticalOptions="EndAndExpand" 
+                          HorizontalOptions="CenterAndExpand"   />
+    </StackLayout>
+</ContentPage>

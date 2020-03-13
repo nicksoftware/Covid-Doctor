@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:CoronaDoctor.Controls"
+   
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:converter="clr-namespace:CoronaDoctor.Converters"
+             xmlns:ad="clr-namespace:CoronaDoctor"
+             mc:Ignorable="d"
+             x:Class="CoronaDoctor.Views.SafetyTips.SafetyTipsList.SafetyTipsListPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{DynamicResource Gray-White}" >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        <converter:BooleanToStringConverter x:Key="boolToStringConverter" />
+    </ContentPage.Resources>
+    <ContentPage.ControlTemplate>
+        <ControlTemplate>
+            <StackLayout x:Name="rootLayout" Spacing="0">
+                
+                <!--  Title View  -->
+                <controls:TitleView 
+                    Title="Safety tips"
+                    FontFamily="{StaticResource Montserrat-Medium}"
+                    FontSize="16">
+                    <controls:TitleView.LeadingView>
+                        <buttons:SfButton
+                            x:Name="backButton"
+                            CornerRadius="4"
+                            Clicked="backButton_Clicked"
+                            Style="{StaticResource IconButtonStyle}"
+                            Text="{StaticResource Back}" />
+                    </controls:TitleView.LeadingView>
+                </controls:TitleView>
+                
+                
+
+                <ContentPresenter />
+
+            </StackLayout>
+        </ControlTemplate>
+    </ContentPage.ControlTemplate>
+    <ContentPage.Content>
+        <StackLayout Spacing="0" Padding="0">
+            <ListView  x:Name="safetyTipsList" ItemsSource="{Binding safetyTips}"
+                 ItemTapped="safetyTipsList_ItemTapped"
+                       ItemSelected="safetyTipsList_ItemSelected"
+                   Margin="5,0,5,0"
+                       
+                       VerticalScrollBarVisibility="Never"
+                   HasUnevenRows="True" SeparatorVisibility="None"
+                   >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout >
+                                <cards:SfCardView CornerRadius="4" Margin="1" 
+                                                   HeightRequest="80"
+                                                  
+                                                  IndicatorColor="{Binding BackgroundGradientStart}" 
+                                                  IndicatorPosition="Right" IndicatorThickness="1">
+                                    <Grid  RowSpacing="4" Padding="16">
+                                        <Label  Grid.Column="0" Grid.RowSpan="2" VerticalTextAlignment="Center" VerticalOptions="Center" FontSize="18" Text="{Binding Title ,StringFormat='{0}'}"></Label>
+                                    </Grid>
+                                </cards:SfCardView>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

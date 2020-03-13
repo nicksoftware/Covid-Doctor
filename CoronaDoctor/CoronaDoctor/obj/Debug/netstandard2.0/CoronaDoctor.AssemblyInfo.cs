@@ -11,11 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("CoronaDoctor")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Hlulani Nicolas Maluleke")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("CoronaDoctor")]
+[assembly: System.Reflection.AssemblyProductAttribute("NCov-19 Doctor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CoronaDoctor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

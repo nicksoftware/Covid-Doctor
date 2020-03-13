@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:CoronaDoctor.Controls"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:listView="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+             xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+             xmlns:behavior="clr-namespace:CoronaDoctor.Behaviors"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{DynamicResource Gray-White}"
+           
+             x:Class="CoronaDoctor.Views.Countries.CountryDetailPage" IsVisible="True"  Title="{Binding Country}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <ContentPage.ControlTemplate>
+        <ControlTemplate>
+            <StackLayout Spacing="0">
+                <!--  Title View  -->
+                <controls:TitleView Title="Covid Doctor">
+                    <controls:TitleView.LeadingView>
+                        <buttons:SfButton
+                            x:Name="backButton"
+                            Clicked="backButton_Clicked"
+           
+                            CornerRadius="4"
+                            Style="{StaticResource IconButtonStyle}"
+                            Text="{StaticResource Back}" />
+                    </controls:TitleView.LeadingView>
+ 
+                </controls:TitleView>
+                <ContentPresenter />
+            </StackLayout>
+        </ControlTemplate>
+    </ContentPage.ControlTemplate>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="0" Margin="0" Padding="8">
+
+
+                <StackLayout Padding="10,20,10,10">
+                    <Label Text="{Binding Country}" Margin="0,0,0,10"  FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                </StackLayout>
+                <listView:SfListView SelectionMode="None" AutoFitMode="Height" ItemSpacing="8"
+                                     x:Name="menuList"
+                                  
+                                     ItemsSource="{Binding CardItems}">
+
+                    <listView:SfListView.ItemTemplate>
+                        <DataTemplate>
+
+                            <cards:SfCardView CornerRadius="8">
+                                <cards:SfCardView.Content>
+                                    <Grid>
+
+                                        <gradient:SfGradientView>
+                                            <gradient:SfGradientView.BackgroundBrush>
+                                                <gradient:SfLinearGradientBrush>
+                                                    <gradient:SfLinearGradientBrush.GradientStops>
+                                                        <gradient:SfGradientStop Color="{Binding BackgroundGradientStart}" Offset="0.0"/>
+                                                        <gradient:SfGradientStop Color="{Binding BackgroundGradientEnd}" Offset="1.0"/>
+                                                    </gradient:SfLinearGradientBrush.GradientStops>
+                                                </gradient:SfLinearGradientBrush>
+                                            </gradient:SfGradientView.BackgroundBrush>
+                                        </gradient:SfGradientView>
+
+                                        <StackLayout Margin="15" Spacing="5" >
+                                            <Label TextColor="{DynamicResource Gray-White}" LineHeight="{OnPlatform Android=1.25, Default=-1}" FontFamily="{StaticResource Montserrat-SemiBold}" FontSize="12" Text="{Binding Category}"></Label>
+                                            <Label TextColor="{DynamicResource Gray-White}" LineHeight="{OnPlatform Android=1.25, Default=-1}" FontFamily="{StaticResource Montserrat-SemiBold}" FontSize="24" Text="{Binding CategoryValue}"></Label>
+                                            <!--<chart:SfChart BackgroundColor="Transparent"
+                                                Margin="0, 11, 0, 0"
+                                                HeightRequest="{OnIdiom Phone=44, Desktop=80, Tablet=80}"
+                                                HorizontalOptions="FillAndExpand"
+                                                VerticalOptions="FillAndExpand">
+                                        <chart:SfChart.PrimaryAxis>
+                                            <chart:DateTimeAxis ShowMajorGridLines="False" RangePadding="None" IsVisible="False"/>
+                                        </chart:SfChart.PrimaryAxis>
+
+                                        <chart:SfChart.SecondaryAxis>
+                                            <chart:NumericalAxis ShowMajorGridLines="False" IsVisible="False" />
+                                        </chart:SfChart.SecondaryAxis>
+
+                                        <chart:SfChart.Series>
+                                            <chart:SplineSeries
+                                                        ItemsSource="{Binding ChartData, Mode=TwoWay}"
+                                                        Color="{DynamicResource Gray-White}"
+                                                        StrokeWidth="2"
+                                                        XBindingPath="XValue"
+                                                        YBindingPath="YValue" />
+                                        </chart:SfChart.Series>
+
+                                    </chart:SfChart>-->
+                                        </StackLayout>
+                                    </Grid>
+                                </cards:SfCardView.Content>
+                            </cards:SfCardView>
+
+                        </DataTemplate>
+                    </listView:SfListView.ItemTemplate>
+
+                    <!--  Layout to customize number of columns in SfListView  -->
+                    <listView:SfListView.LayoutManager>
+                        <listView:GridLayout SpanCount="2" />
+                    </listView:SfListView.LayoutManager>
+
+                    <listView:SfListView.Behaviors>
+                        <behavior:SfListViewExtendHeightBehavior ></behavior:SfListViewExtendHeightBehavior>
+                    </listView:SfListView.Behaviors>
+
+                </listView:SfListView>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

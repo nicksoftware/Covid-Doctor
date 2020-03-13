@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CoronaDoctor.Views.AboutUs.AboutUsSimplePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewModel="clr-namespace:CoronaDoctor.ViewModels.AboutUs"
+    xmlns:controls="clr-namespace:CoronaDoctor.Controls"
+    xmlns:ad="clr-namespace:CoronaDoctor"
+    xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms"
+    xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    Title="About"
+    BackgroundColor="{DynamicResource Gray-White}"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.ControlTemplate>
+        <ControlTemplate>
+            <StackLayout Spacing="0">
+                <!--  Title View  -->
+                <controls:TitleView Title="Covid Doctor">
+
+                    <controls:TitleView.LeadingView>
+                        <buttons:SfButton
+                            x:Name="backButton"
+                            CornerRadius="4"
+                            Clicked="backButton_Clicked"
+                            Style="{StaticResource IconButtonStyle}"
+                            Text="{StaticResource Back}" />
+                    </controls:TitleView.LeadingView>
+                    <controls:TitleView.TrailingView>
+                        <StackLayout Orientation="Horizontal">
+                            <!--Favourite button-->
+                            <buttons:SfButton
+                                x:Name="shareButton"
+                                CornerRadius="4"
+                                Clicked="shareButton_Clicked"
+                                HeightRequest="40"
+                                Style="{StaticResource IconButtonStyle}"
+                                Text="{StaticResource Share}"
+                     
+                                WidthRequest="40" />
+
+                        </StackLayout>
+                    </controls:TitleView.TrailingView>
+                </controls:TitleView>
+                <ContentPresenter />
+            </StackLayout>
+        </ControlTemplate>
+    </ContentPage.ControlTemplate>
+
+    <ContentPage.Content>
+        <StackLayout >
+            <ScrollView  HorizontalOptions="Center" VerticalOptions="Center">
+                <StackLayout
+                    HorizontalOptions="Center"
+                    Spacing="0"
+                    VerticalOptions="Center">
+
+                    <StackLayout.BindingContext>
+                        <viewModel:AboutUsViewModel />
+                    </StackLayout.BindingContext>
+
+                    <!--  Product image  -->
+                    <!--<Image HeightRequest="110" WidthRequest="124">
+                        <Image.Source>
+                            <UriImageSource
+                                CacheValidity="14"
+                                CachingEnabled="true"
+                                Uri="{ }" />
+                        </Image.Source>
+                    </Image>-->
+
+
+                    <!--  Product title  -->
+                    <Label
+                        FontFamily="{StaticResource Montserrat-SemiBold}"
+                        HorizontalOptions="CenterAndExpand"
+                        Style="{StaticResource HeaderLabelStyle}"
+                        Text="Cov-19 Doctor">
+                        <Label.Margin>
+                            <OnIdiom
+                                x:TypeArguments="Thickness"
+                                Default="0, 32, 0, 8"
+                                Phone="0, 16, 0, 16" />
+                        </Label.Margin>
+                    </Label>
+                    <!--  Product version  -->
+                    <Label
+                        Margin="0,8.7,0,0"
+                        HorizontalOptions="CenterAndExpand"
+                        Style="{StaticResource VersionLabelStyle}"
+                        Text="{Binding ProductVersion, StringFormat='Version {0}'}" />
+                    
+                    <!--  Product description  -->
+                    <Label
+                        Margin="15,0,15,0"
+                        HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource DescriptionLabelStyle}"
+                        Text="{Binding ProductDescription}" />
+
+                    <!--  Product description  -->
+                    <Label
+                        FontFamily="{StaticResource Montserrat-SemiBold}"
+                        HorizontalOptions="CenterAndExpand"
+                        Style="{StaticResource HeaderLabelStyle}"
+                        Text="Team">
+                        <Label.Margin>
+                            <OnIdiom
+                                x:TypeArguments="Thickness"
+                                Default="0, 36, 0, 8"
+                                Phone="0, 16, 0, 16" />
+                        </Label.Margin>
+                    </Label>
+                    <cards:SfCardLayout   ShowSwipedCard="True" 
+                                          SwipeDirection="Left" 
+                                          BindableLayout.ItemsSource="{Binding EmployeeDetails}"
+                                          HeightRequest="500"     
+                                          BackgroundColor="{DynamicResource Gray-White}">
+
+                        <BindableLayout.ItemTemplate >
+                            <DataTemplate>
+                                <cards:SfCardView     BackgroundColor="{DynamicResource Gray-White}">
+                                    <StackLayout Padding="15">
+                                        <sfavatar:SfAvatarView ContentType="Default"
+                                                               Margin="0,20,0,0"
+                                               ImageSource="{Binding ImageUrl}" 
+                                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"  BorderWidth="1" 
+                                               HeightRequest="100"
+                                               CornerRadius="50"
+                                               WidthRequest="100" />
+                                        <Label Text="{Binding EmployeeName, StringFormat='{0}'}" Style="{StaticResource HeaderLabelStyle}"/>
+                                        <Label Text="{Binding Designation,StringFormat='{0}'}" Style="{StaticResource DescriptionLabelStyle}" HorizontalOptions="Center"/>
+                                        <Label Text="Background" FontSize="16" 
+                                               Style="{StaticResource HeaderLabelStyle}"/>
+                                        <Label Text="{Binding BackgroundHistory}"   HorizontalOptions="CenterAndExpand"  
+                                               Style="{StaticResource DescriptionLabelStyle}"/>
+                                       
+                                        <buttons:SfButton   BackgroundColor="{DynamicResource PrimaryColor }"
+                                                  Text="Get to know me"  Padding="12"
+                                                            IsEnabled="{Binding HasWebSite}"
+                                                            x:Name="btnGetToKnowMe"
+                                                            Clicked="btnGetToKnowMe_Clicked"
+                                                  CornerRadius="20"
+                                                  Margin="10,20,10,0" VerticalOptions="EndAndExpand" 
+                                                  HorizontalOptions="CenterAndExpand"   />
+                                    </StackLayout>
+                                </cards:SfCardView>
+                            </DataTemplate>
+                        </BindableLayout.ItemTemplate>
+                    </cards:SfCardLayout>
+
+                    <!-- Services used Description -->
+                    <Label
+                        FontFamily="{StaticResource Montserrat-SemiBold}"
+                        HorizontalOptions="CenterAndExpand"
+                        Style="{StaticResource HeaderLabelStyle}"
+                        Text="Data gathered">
+                        <Label.Margin>
+                            <OnIdiom
+                                x:TypeArguments="Thickness"
+                                Default="0, 25, 0, 8"
+                                Phone="0, 16, 0, 16" />
+                        </Label.Margin>
+                    </Label>
+                    <Label
+                        Margin="15,0,15,0"
+                         HorizontalOptions="CenterAndExpand"  
+                        HorizontalTextAlignment="Center"
+                        Style="{StaticResource DescriptionLabelStyle}"
+                        Text="{Binding SoftwareServices}" />
+
+                </StackLayout>
+  
+            </ScrollView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

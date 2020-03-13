@@ -1,8 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <UserSecretsId>04bf20e2-d170-4e5f-a319-9e27d4fa38e7</UserSecretsId>
+    <AssemblyName>CoronaDoctor</AssemblyName>
+    <Authors>Hlulani Nicolas Maluleke</Authors>
+    <Product>NCov-19 Doctor</Product>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageId>CoronaDoctor</PackageId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -11,16 +17,98 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Syncfusion.Licensing" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.DataSource" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNavigationDrawer" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar" Version="17.4.0.53" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="17.4.0.53" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="3.2.0" />
+    <PackageReference Include="Xam.Plugins.Notifier" Version="3.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.3.7" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\DiagnosisPage.xaml">
+    <Compile Update="Views\Countries\CountriesListPage.xaml.cs">
+      <DependentUpon>CountriesListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\DashboardHomePage\HealthCarePage.xaml.cs">
+      <DependentUpon>HealthCarePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SafetyTips\SafetyTipsDetailPage\SafetyTipsDetailPage.xaml.cs">
+      <DependentUpon>SafetyTipsDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SafetyTips\SafetyTipsList\Styles.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\SelfDiagnosis\Styles.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Themes\LightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AboutUs\AboutUsSimplePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AboutUs\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Countries\CountriesListPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Countries\CountryDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\HomePage.xaml">
+    <EmbeddedResource Update="Views\Countries\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DashboardHomePage\HealthCarePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DashboardHomePage\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SafetyTips\SafetyTipsDetailPage\SafetyTipsDetailPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SafetyTips\SafetyTipsDetailPage\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SafetyTips\SafetyTipsList\SafetyTipsListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\SafetyTips\SafetyTipsList\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SelfDiagnosis\DiagnosisPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SelfDiagnosis\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Templates\ArticleTileTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Templates\ReviewTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Templates\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\AdService\" />
   </ItemGroup>
 </Project>

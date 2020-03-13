@@ -4,5 +4,10 @@
     <SelectedDevice>pixel_2_pie_9_0_api_28</SelectedDevice>
     <DefaultDevice>pixel_2_pie_9_0_api_28</DefaultDevice>
     <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ReferencePath>
+    </ReferencePath>
   </PropertyGroup>
 </Project>

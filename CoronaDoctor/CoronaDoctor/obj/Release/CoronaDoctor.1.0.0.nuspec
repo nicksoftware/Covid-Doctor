@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CoronaDoctor</id>
+    <version>1.0.0</version>
+    <authors>Hlulani Nicolas Maluleke</authors>
+    <owners>Hlulani Nicolas Maluleke</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="MarcTron.Admob" version="1.4.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Net.Http" version="2.2.29" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Licensing" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Xamarin.Buttons" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Xamarin.Cards" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Xamarin.Core" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Xamarin.DataSource" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Xamarin.SfChart" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Xamarin.SfComboBox" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Xamarin.SfListView" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Xamarin.SfProgressBar" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Syncfusion.Xamarin.SfRating" version="17.4.0.53" exclude="Build,Analyzers" />
+        <dependency id="Xam.Plugin.Connectivity" version="3.2.0" exclude="Build,Analyzers" />
+        <dependency id="Xam.Plugins.Notifier" version="3.0.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Essentials" version="1.3.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms" version="4.3.0.908675" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Forms.PancakeView" version="1.3.7" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\User\source\repos\CoronaDoctorApp\CoronaDoctor\CoronaDoctor\bin\Release\netstandard2.0\CoronaDoctor.dll" target="lib\netstandard2.0\CoronaDoctor.dll" />
+  </files>
+</package>

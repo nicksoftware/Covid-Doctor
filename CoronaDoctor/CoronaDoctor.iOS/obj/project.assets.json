@@ -2,6 +2,213 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "Microsoft.Bcl/1.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/_._": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Buttons/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Cards/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.DataSource/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.GridCommon/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfChart/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfListView/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Syncfusion.Xamarin.DataSource": "17.4.0.53",
+          "Syncfusion.Xamarin.GridCommon": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfNavigationDrawer/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfProgressBar/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRating/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -9,6 +216,28 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugins.Notifier/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
         }
       },
       "Xamarin.Essentials/1.3.1": {
@@ -149,12 +378,39 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/1.3.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "CoronaDoctor/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Syncfusion.Licensing": "17.4.0.53",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.53",
+          "Syncfusion.Xamarin.Cards": "17.4.0.53",
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Syncfusion.Xamarin.DataSource": "17.4.0.53",
+          "Syncfusion.Xamarin.SfChart": "17.4.0.53",
+          "Syncfusion.Xamarin.SfComboBox": "17.4.0.53",
+          "Syncfusion.Xamarin.SfListView": "17.4.0.53",
+          "Syncfusion.Xamarin.SfNavigationDrawer": "17.4.0.53",
+          "Syncfusion.Xamarin.SfProgressBar": "17.4.0.53",
+          "Syncfusion.Xamarin.SfRating": "17.4.0.53",
+          "Xam.Plugin.Connectivity": "3.2.0",
+          "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Xamarin.Forms": "4.3.0.908675",
+          "Xamarin.Forms.PancakeView": "1.3.7"
         },
         "compile": {
           "bin/placeholder/CoronaDoctor.dll": {}
@@ -165,6 +421,213 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "Microsoft.Bcl/1.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/_._": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Buttons/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Cards/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.DataSource/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.GridCommon/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfChart/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfListView/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Syncfusion.Xamarin.DataSource": "17.4.0.53",
+          "Syncfusion.Xamarin.GridCommon": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfNavigationDrawer/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfProgressBar/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRating/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -172,6 +635,28 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugins.Notifier/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
         }
       },
       "Xamarin.Essentials/1.3.1": {
@@ -312,12 +797,39 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/1.3.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "CoronaDoctor/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Syncfusion.Licensing": "17.4.0.53",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.53",
+          "Syncfusion.Xamarin.Cards": "17.4.0.53",
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Syncfusion.Xamarin.DataSource": "17.4.0.53",
+          "Syncfusion.Xamarin.SfChart": "17.4.0.53",
+          "Syncfusion.Xamarin.SfComboBox": "17.4.0.53",
+          "Syncfusion.Xamarin.SfListView": "17.4.0.53",
+          "Syncfusion.Xamarin.SfNavigationDrawer": "17.4.0.53",
+          "Syncfusion.Xamarin.SfProgressBar": "17.4.0.53",
+          "Syncfusion.Xamarin.SfRating": "17.4.0.53",
+          "Xam.Plugin.Connectivity": "3.2.0",
+          "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Xamarin.Forms": "4.3.0.908675",
+          "Xamarin.Forms.PancakeView": "1.3.7"
         },
         "compile": {
           "bin/placeholder/CoronaDoctor.dll": {}
@@ -328,6 +840,213 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Microsoft.Bcl/1.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/_._": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Buttons/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Cards/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.DataSource/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.GridCommon/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfChart/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfListView/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Syncfusion.Xamarin.DataSource": "17.4.0.53",
+          "Syncfusion.Xamarin.GridCommon": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfNavigationDrawer/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfProgressBar/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRating/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -335,6 +1054,28 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugins.Notifier/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
         }
       },
       "Xamarin.Essentials/1.3.1": {
@@ -475,12 +1216,39 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/1.3.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "CoronaDoctor/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Syncfusion.Licensing": "17.4.0.53",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.53",
+          "Syncfusion.Xamarin.Cards": "17.4.0.53",
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Syncfusion.Xamarin.DataSource": "17.4.0.53",
+          "Syncfusion.Xamarin.SfChart": "17.4.0.53",
+          "Syncfusion.Xamarin.SfComboBox": "17.4.0.53",
+          "Syncfusion.Xamarin.SfListView": "17.4.0.53",
+          "Syncfusion.Xamarin.SfNavigationDrawer": "17.4.0.53",
+          "Syncfusion.Xamarin.SfProgressBar": "17.4.0.53",
+          "Syncfusion.Xamarin.SfRating": "17.4.0.53",
+          "Xam.Plugin.Connectivity": "3.2.0",
+          "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Xamarin.Forms": "4.3.0.908675",
+          "Xamarin.Forms.PancakeView": "1.3.7"
         },
         "compile": {
           "bin/placeholder/CoronaDoctor.dll": {}
@@ -491,6 +1259,213 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Microsoft.Bcl/1.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/_._": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.14": {
+        "type": "package"
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Syncfusion.Licensing/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Buttons/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Cards/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.Core/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.DataSource/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.GridCommon/17.4.0.53": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfChart/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfComboBox/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfListView/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Syncfusion.Xamarin.DataSource": "17.4.0.53",
+          "Syncfusion.Xamarin.GridCommon": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfNavigationDrawer/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfProgressBar/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRating/17.4.0.53": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Xamarin.Forms": "3.6.0.344457"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -498,6 +1473,28 @@
         },
         "runtime": {
           "lib/xamarinios10/_._": {}
+        }
+      },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.Connectivity.dll": {}
+        }
+      },
+      "Xam.Plugins.Notifier/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll": {}
         }
       },
       "Xamarin.Essentials/1.3.1": {
@@ -638,12 +1635,39 @@
           "build/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.PancakeView/1.3.7": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.6.0.220655"
+        },
+        "compile": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Xamarin.Forms.PancakeView.dll": {}
+        }
+      },
       "CoronaDoctor/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "Syncfusion.Licensing": "17.4.0.53",
+          "Syncfusion.Xamarin.Buttons": "17.4.0.53",
+          "Syncfusion.Xamarin.Cards": "17.4.0.53",
+          "Syncfusion.Xamarin.Core": "17.4.0.53",
+          "Syncfusion.Xamarin.DataSource": "17.4.0.53",
+          "Syncfusion.Xamarin.SfChart": "17.4.0.53",
+          "Syncfusion.Xamarin.SfComboBox": "17.4.0.53",
+          "Syncfusion.Xamarin.SfListView": "17.4.0.53",
+          "Syncfusion.Xamarin.SfNavigationDrawer": "17.4.0.53",
+          "Syncfusion.Xamarin.SfProgressBar": "17.4.0.53",
+          "Syncfusion.Xamarin.SfRating": "17.4.0.53",
+          "Xam.Plugin.Connectivity": "3.2.0",
+          "Xam.Plugins.Notifier": "3.0.1",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Xamarin.Forms": "4.3.0.908675",
+          "Xamarin.Forms.PancakeView": "1.3.7"
         },
         "compile": {
           "bin/placeholder/CoronaDoctor.dll": {}
@@ -655,6 +1679,547 @@
     }
   },
   "libraries": {
+    "Microsoft.Bcl/1.1.10": {
+      "sha512": "+tTqoh/M1pyL8El3qLy30EcwnAtyvFoDZJtdG9Cbg/WdFbh4N8kyrq198XHuEL7lnJbeD0DRO8jcX5IIOh05cQ==",
+      "type": "package",
+      "path": "microsoft.bcl/1.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/Xamarin.iOS10/_._",
+        "lib/monoandroid/_._",
+        "lib/monotouch/_._",
+        "lib/net40/System.IO.dll",
+        "lib/net40/System.IO.xml",
+        "lib/net40/System.Runtime.dll",
+        "lib/net40/System.Runtime.xml",
+        "lib/net40/System.Threading.Tasks.dll",
+        "lib/net40/System.Threading.Tasks.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/_._",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8/System.IO.dll",
+        "lib/portable-net40+sl4+win8/System.IO.xml",
+        "lib/portable-net40+sl4+win8/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8/System.IO.dll",
+        "lib/portable-net40+win8/System.IO.xml",
+        "lib/portable-net40+win8/System.Runtime.dll",
+        "lib/portable-net40+win8/System.Runtime.xml",
+        "lib/portable-net40+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8/ensureRedirect.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/portable-net451+win81+wpa81/_._",
+        "lib/portable-net451+win81/_._",
+        "lib/portable-win81+wp81+wpa81/_._",
+        "lib/sl4-windowsphone71/System.IO.dll",
+        "lib/sl4-windowsphone71/System.IO.xml",
+        "lib/sl4-windowsphone71/System.Runtime.dll",
+        "lib/sl4-windowsphone71/System.Runtime.xml",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/ensureRedirect.xml",
+        "lib/sl4/System.IO.dll",
+        "lib/sl4/System.IO.xml",
+        "lib/sl4/System.Runtime.dll",
+        "lib/sl4/System.Runtime.xml",
+        "lib/sl4/System.Threading.Tasks.dll",
+        "lib/sl4/System.Threading.Tasks.xml",
+        "lib/sl5/System.IO.dll",
+        "lib/sl5/System.IO.xml",
+        "lib/sl5/System.Runtime.dll",
+        "lib/sl5/System.Runtime.xml",
+        "lib/sl5/System.Threading.Tasks.dll",
+        "lib/sl5/System.Threading.Tasks.xml",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/wpa81/_._",
+        "microsoft.bcl.1.1.10.nupkg.sha512",
+        "microsoft.bcl.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.Build/1.0.14": {
+      "sha512": "cDLKSvNvRa519hplsbSoYqO69TjdDIhfjtKUM0g20/nVROoWsGav9KCI9HtnGjLmdV1+TcUUDhbotcllibjPEA==",
+      "type": "package",
+      "path": "microsoft.bcl.build/1.0.14",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "content/net40/_._",
+        "content/netcore45/_._",
+        "content/portable-net40+win8+sl4+wp71+wpa81/_._",
+        "content/sl4-windowsphone71/_._",
+        "content/sl4/_._",
+        "microsoft.bcl.build.1.0.14.nupkg.sha512",
+        "microsoft.bcl.build.nuspec",
+        "tools/Install.ps1",
+        "tools/Microsoft.Bcl.Build.Tasks.dll",
+        "tools/Microsoft.Bcl.Build.targets",
+        "tools/Uninstall.ps1"
+      ]
+    },
+    "Microsoft.Net.Http/2.2.29": {
+      "sha512": "fc4CPEewJ30Xgal+fSq1lYIBt582A7eKlAL7O4HXiYAiTp2VTnA4osSvk7T2n8aS4xTCPVJusQk3yKLT0XSpkg==",
+      "type": "package",
+      "path": "microsoft.net.http/2.2.29",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.XML",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.xml",
+        "lib/monoandroid/System.Net.Http.Extensions.XML",
+        "lib/monoandroid/System.Net.Http.Extensions.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.xml",
+        "lib/monotouch/System.Net.Http.Extensions.XML",
+        "lib/monotouch/System.Net.Http.Extensions.dll",
+        "lib/monotouch/System.Net.Http.Primitives.dll",
+        "lib/monotouch/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.Extensions.XML",
+        "lib/net40/System.Net.Http.Extensions.dll",
+        "lib/net40/System.Net.Http.Primitives.dll",
+        "lib/net40/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/System.Net.Http.Extensions.XML",
+        "lib/net45/System.Net.Http.Extensions.dll",
+        "lib/net45/System.Net.Http.Primitives.dll",
+        "lib/net45/System.Net.Http.Primitives.xml",
+        "lib/net45/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8/ensureRedirect.xml",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.xml",
+        "lib/win8/System.Net.Http.Extensions.XML",
+        "lib/win8/System.Net.Http.Extensions.dll",
+        "lib/win8/System.Net.Http.Primitives.dll",
+        "lib/win8/System.Net.Http.Primitives.xml",
+        "lib/wpa81/System.Net.Http.Extensions.XML",
+        "lib/wpa81/System.Net.Http.Extensions.dll",
+        "lib/wpa81/System.Net.Http.Primitives.dll",
+        "lib/wpa81/System.Net.Http.Primitives.xml",
+        "microsoft.net.http.2.2.29.nupkg.sha512",
+        "microsoft.net.http.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Syncfusion.Licensing/17.4.0.53": {
+      "sha512": "Mp67yPrr/dg3h3WJtanMwza+j3D4vp37IEGxZ1cs2+hOEZPCgzcMlFpB2Ic1jVp586wdEvzTCPVOSk4eWJrnng==",
+      "type": "package",
+      "path": "syncfusion.licensing/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Licensing.dll",
+        "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Licensing.dll",
+        "lib/net20/Syncfusion.Licensing.dll",
+        "lib/net35/Syncfusion.Licensing.dll",
+        "lib/net40/Syncfusion.Licensing.dll",
+        "lib/net45/Syncfusion.Licensing.dll",
+        "lib/net451/Syncfusion.Licensing.dll",
+        "lib/net46/Syncfusion.Licensing.dll",
+        "lib/netcoreapp3.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.0/Syncfusion.Licensing.dll",
+        "lib/netstandard1.2/Syncfusion.Licensing.dll",
+        "lib/netstandard1.4/Syncfusion.Licensing.dll",
+        "lib/netstandard2.0/Syncfusion.Licensing.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
+        "lib/uap10.0/Syncfusion.Licensing.dll",
+        "syncfusion.licensing.17.4.0.53.nupkg.sha512",
+        "syncfusion.licensing.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.Buttons/17.4.0.53": {
+      "sha512": "02bCSFYurb2VDPvOYpUG+iGynpgOfESzEH4BN5MjToQfZ0gvz1TJLke/WB+uSqS1Auba8ijX9LgsaDtuMd62Zw==",
+      "type": "package",
+      "path": "syncfusion.xamarin.buttons/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Buttons.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.Buttons.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.Buttons.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Buttons.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.Buttons.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Buttons.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Buttons.XForms.xml",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Assets/SfButton.ttf",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Assets/sfbutton_Segoe MDL2 Assets.ttf",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Properties/Syncfusion.Buttons.XForms.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Syncfusion.Buttons.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Themes/Generic.xaml",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.dll",
+        "lib/uap10.0/Syncfusion.Buttons.XForms.xml",
+        "syncfusion.xamarin.buttons.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.buttons.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.Cards/17.4.0.53": {
+      "sha512": "6ZF/fxw5pPGMcVMDrMjFYCsqAVOZd5SB3czh3HMR3kmgV7BKiN8Cv3z6R0etch0eraDi+6x5xE/Mf4r8khFA6A==",
+      "type": "package",
+      "path": "syncfusion.xamarin.cards/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Cards.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.Cards.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.Cards.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Cards.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.Cards.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Cards.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Cards.XForms.xml",
+        "lib/uap10.0/Syncfusion.Cards.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Cards.XForms.UWP.xml",
+        "lib/uap10.0/Syncfusion.Cards.XForms.dll",
+        "lib/uap10.0/Syncfusion.Cards.XForms.xml",
+        "syncfusion.xamarin.cards.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.cards.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.Core/17.4.0.53": {
+      "sha512": "MI9r9S+yZ1BmYadzu/LmsiSrqGOcJCOAqFyUHMqO3nuag+OfJK7rGIPhtOkwstmpT0rJ12Cf8P59cbgBv7deXA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.core/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.Core.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.Core.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.Core.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.Core.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Core.XForms.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/Syncfusion.Core.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/DropDownIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleCollapsedIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
+        "lib/uap10.0/Syncfusion.Core.XForms.dll",
+        "lib/uap10.0/Syncfusion.Core.XForms.xml",
+        "syncfusion.xamarin.core.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.core.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.DataSource/17.4.0.53": {
+      "sha512": "NVI121/HBZejnL3bk8ccGn2/HFR5FbNxC69YbbJDVhoSxa8vF8dYlQjXz4QRquvSD3pD3rpHNcSWZewWO2F5gA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.datasource/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.DataSource.Portable.XML",
+        "lib/MonoAndroid10/Syncfusion.DataSource.Portable.dll",
+        "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.XML",
+        "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.DataSource.Portable.XML",
+        "lib/netstandard2.0/Syncfusion.DataSource.Portable.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.DataSource.Portable.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.DataSource.Portable.dll",
+        "lib/uap10.0/Syncfusion.DataSource.Portable.XML",
+        "lib/uap10.0/Syncfusion.DataSource.Portable.dll",
+        "syncfusion.xamarin.datasource.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.datasource.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.GridCommon/17.4.0.53": {
+      "sha512": "z7TWtt45vycdMSYsti+HEMhR5V2l0SrPxQD5DJ+jyQ4T4dmn09MpoFOeBNAyvCFpDiaBxRLU3NwLLgcCcxobuA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.gridcommon/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.XML",
+        "lib/MonoAndroid10/Syncfusion.GridCommon.Portable.dll",
+        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.XML",
+        "lib/Xamarin.Mac/Syncfusion.GridCommon.Portable.dll",
+        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.XML",
+        "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll",
+        "lib/netstandard2.0/Syncfusion.GridCommon.Portable.XML",
+        "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.dll",
+        "lib/uap10.0/Syncfusion.GridCommon.Portable.XML",
+        "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
+        "syncfusion.xamarin.gridcommon.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.gridcommon.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfChart/17.4.0.53": {
+      "sha512": "tkTuIdDjJoNotfN4cJSqkkwIMeayb/ntH/egkA1Qv6An8Q6yDeFxU1NCi2M9grkZ0h11HiXkLISozYyjOTsDuA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfchart/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfChart.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfChart.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfChart.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.SfChart.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.SfChart.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfChart.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfChart.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfChart.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfChart.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfChart.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfChart.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfChart.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfChart.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfChart.XForms.xml",
+        "syncfusion.xamarin.sfchart.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.sfchart.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfComboBox/17.4.0.53": {
+      "sha512": "/OVwBbbpfqcQgdvtRU+dNndeLswE8nVTH1OjdP/POsFq2PE1D1oWFcqLHZOpAv/hBGjOusj4X6pk0rIItART5A==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfcombobox/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfComboBox.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfComboBox.XForms.XML",
+        "lib/MonoAndroid10/Syncfusion.SfComboBox.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll",
+        "lib/netstandard2.0/Syncfusion.SfComboBox.XForms.XML",
+        "lib/netstandard2.0/Syncfusion.SfComboBox.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfComboBox.XForms.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfComboBox.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Properties/Syncfusion.SfComboBox.XForms.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Syncfusion.SfComboBox.XForms.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/Themes/Generic.xaml",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/darkthemeimage.png",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/dropdownbuttonimage.png",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.XML",
+        "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll",
+        "syncfusion.xamarin.sfcombobox.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.sfcombobox.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfListView/17.4.0.53": {
+      "sha512": "MAShowatBT1qoatKWWttMjAENmQU6iG9giCEFWhGk+KIoktf1ktCx5V/VRpXqa5+UkQ18fxkUmjyOidw5dMWPQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sflistview/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfListView.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfListView.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfListView.XForms.xml",
+        "lib/Xamarin.Mac/Syncfusion.SfListView.XForms.dll",
+        "lib/Xamarin.Mac/Syncfusion.SfListView.XForms.macOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfListView.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfListView.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfListView.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfListView.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfListView.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfListView.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfListView.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfListView.XForms.xml",
+        "syncfusion.xamarin.sflistview.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.sflistview.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfNavigationDrawer/17.4.0.53": {
+      "sha512": "4v8mXzaDYK3oXtwDeY3xFn8Wv4qTW+ALm9DwFtvoSiMxRVA4lY1sLaWj8BaS69E/A5qVzDx2ytrfwb9jolgvPQ==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfnavigationdrawer/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfNavigationDrawer.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfNavigationDrawer.Android.xml",
+        "lib/MonoAndroid10/Syncfusion.SfNavigationDrawer.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfNavigationDrawer.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfNavigationDrawer.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfNavigationDrawer.iOS.xml",
+        "lib/netstandard2.0/Syncfusion.SfNavigationDrawer.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfNavigationDrawer.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNavigationDrawer.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfNavigationDrawer.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfNavigationDrawer.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfNavigationDrawer.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfNavigationDrawer.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfNavigationDrawer.XForms.xml",
+        "syncfusion.xamarin.sfnavigationdrawer.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.sfnavigationdrawer.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfProgressBar/17.4.0.53": {
+      "sha512": "7b82/UoKLvz3TFHrwezJwi3PuzD3y/tgLdXcIeo9+m5qlZn/+esK9ffTRHG4qIsn5B28nqJt2mwFswszFnbGOg==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfprogressbar/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfProgressBar.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/MonoAndroid10/Syncfusion.SfProgressBar.XForms.xml",
+        "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfProgressBar.XForms.xml",
+        "lib/netstandard2.0/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/netstandard2.0/Syncfusion.SfProgressBar.XForms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfProgressBar.XForms.xml",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.UWP/Font Stepprogress icon.ttf",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfProgressBar.XForms.xml",
+        "syncfusion.xamarin.sfprogressbar.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.sfprogressbar.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfRating/17.4.0.53": {
+      "sha512": "njWKkbgWzweMFDfiHUsK0177V5UxM7rVKENnFzwR20bJP17CKzGhlhNrdnt4ssSeEFZklbJsvplo0crKRRvcjA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfrating/17.4.0.53",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Syncfusion.SfRating.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfRating.Android.xml",
+        "lib/MonoAndroid10/Syncfusion.SfRating.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfRating.XForms.XML",
+        "lib/MonoAndroid10/Syncfusion.SfRating.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRating.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll",
+        "lib/netstandard2.0/Syncfusion.SfRating.XForms.XML",
+        "lib/netstandard2.0/Syncfusion.SfRating.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfRating.XForms.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfRating.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfRating.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfRating.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfRating.XForms.XML",
+        "lib/uap10.0/Syncfusion.SfRating.XForms.dll",
+        "syncfusion.xamarin.sfrating.17.4.0.53.nupkg.sha512",
+        "syncfusion.xamarin.sfrating.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -700,6 +2265,108 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Xam.Plugin.Connectivity/3.2.0": {
+      "sha512": "ZV45TaBTCJg7XQNEl3fPyyJcuMMhdDEQ6BCLc/5pMuTv38M226ER0WTu5sbmba8jlliDuzeRqkRFHwrGdWAgyg==",
+      "type": "package",
+      "path": "xam.plugin.connectivity/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Connectivity.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.xml",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.dll",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.xml",
+        "lib/UAP10/Plugin.Connectivity.XML",
+        "lib/UAP10/Plugin.Connectivity.dll",
+        "lib/UAP10/Plugin.Connectivity.pdb",
+        "lib/UAP10/Plugin.Connectivity.pri",
+        "lib/UAP10/Plugin.Connectivity/Properties/Plugin.Connectivity.rd.xml",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.dll",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.pdb",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.pdb",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.xml",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.dll",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.pdb",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.xml",
+        "lib/XamarinTVOS/Plugin.Connectivity.dll",
+        "lib/XamarinTVOS/Plugin.Connectivity.pdb",
+        "lib/XamarinTVOS/Plugin.Connectivity.xml",
+        "lib/net45/Plugin.Connectivity.Abstractions.dll",
+        "lib/net45/Plugin.Connectivity.Abstractions.pdb",
+        "lib/net45/Plugin.Connectivity.Abstractions.xml",
+        "lib/net45/Plugin.Connectivity.XML",
+        "lib/net45/Plugin.Connectivity.dll",
+        "lib/net45/Plugin.Connectivity.pdb",
+        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.dll",
+        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.pdb",
+        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.xml",
+        "lib/netcoreapp2.0/Plugin.Connectivity.deps.json",
+        "lib/netcoreapp2.0/Plugin.Connectivity.dll",
+        "lib/netcoreapp2.0/Plugin.Connectivity.xml",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Connectivity.deps.json",
+        "lib/netstandard1.0/Plugin.Connectivity.dll",
+        "lib/netstandard1.0/Plugin.Connectivity.pdb",
+        "lib/netstandard1.0/Plugin.Connectivity.xml",
+        "lib/tizen40/Plugin.Connectivity.Abstractions.dll",
+        "lib/tizen40/Plugin.Connectivity.Abstractions.pdb",
+        "lib/tizen40/Plugin.Connectivity.Abstractions.xml",
+        "lib/tizen40/Plugin.Connectivity.deps.json",
+        "lib/tizen40/Plugin.Connectivity.dll",
+        "xam.plugin.connectivity.3.2.0.nupkg.sha512",
+        "xam.plugin.connectivity.nuspec"
+      ]
+    },
+    "Xam.Plugins.Notifier/3.0.1": {
+      "sha512": "QH/+zX9w/hMg1AOAj+a62cIJIqd4tSOSBnGGprHIhfJWHG+v+P6VvIqZSTr9z1dZDd2JfhA7Iz2KGBr4MJ2lOQ==",
+      "type": "package",
+      "path": "xam.plugins.notifier/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.XML",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.dll",
+        "lib/MonoAndroid10/Plugin.LocalNotifications.pdb",
+        "lib/UAP10/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/UAP10/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/UAP10/Plugin.LocalNotifications.XML",
+        "lib/UAP10/Plugin.LocalNotifications.dll",
+        "lib/UAP10/Plugin.LocalNotifications.pdb",
+        "lib/UAP10/Plugin.LocalNotifications.pri",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.dll",
+        "lib/Xamarin.Mac20/Plugin.LocalNotifications.xml",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.XML",
+        "lib/Xamarin.iOS10/Plugin.LocalNotifications.dll",
+        "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.LocalNotifications.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.LocalNotifications.deps.json",
+        "lib/netstandard1.0/Plugin.LocalNotifications.dll",
+        "lib/netstandard1.0/Plugin.LocalNotifications.xml",
+        "xam.plugins.notifier.3.0.1.nupkg.sha512",
+        "xam.plugins.notifier.nuspec"
       ]
     },
     "Xamarin.Essentials/1.3.1": {
@@ -1002,6 +2669,24 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.PancakeView/1.3.7": {
+      "sha512": "b6g3lVHV764yU4BRPzb1bvHT4G9xSQAXIPGtWQvryzLgU2qoqvnboiL5caJfLLFYXPtDy5ptoRD/TzC5i3VF3w==",
+      "type": "package",
+      "path": "xamarin.forms.pancakeview/1.3.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid81/Xamarin.Forms.PancakeView.dll",
+        "lib/monoandroid90/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard1.0/Xamarin.Forms.PancakeView.dll",
+        "lib/netstandard2.0/Xamarin.Forms.PancakeView.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.PancakeView.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.PancakeView.pri",
+        "lib/xamarinios10/Xamarin.Forms.PancakeView.dll",
+        "xamarin.forms.pancakeview.1.3.7.nupkg.sha512",
+        "xamarin.forms.pancakeview.nuspec"
+      ]
+    },
     "CoronaDoctor/1.0.0": {
       "type": "project",
       "path": "../CoronaDoctor/CoronaDoctor.csproj",
@@ -1011,6 +2696,20 @@
   "projectFileDependencyGroups": {
     "Xamarin.iOS,Version=v1.0": [
       "CoronaDoctor >= 1.0.0",
+      "Microsoft.Net.Http >= 2.2.29",
+      "Newtonsoft.Json >= 12.0.3",
+      "Syncfusion.Xamarin.Buttons >= 17.4.0.53",
+      "Syncfusion.Xamarin.Cards >= 17.4.0.53",
+      "Syncfusion.Xamarin.Core >= 17.4.0.53",
+      "Syncfusion.Xamarin.DataSource >= 17.4.0.53",
+      "Syncfusion.Xamarin.SfChart >= 17.4.0.53",
+      "Syncfusion.Xamarin.SfComboBox >= 17.4.0.53",
+      "Syncfusion.Xamarin.SfListView >= 17.4.0.53",
+      "Syncfusion.Xamarin.SfNavigationDrawer >= 17.4.0.53",
+      "Syncfusion.Xamarin.SfProgressBar >= 17.4.0.53",
+      "Syncfusion.Xamarin.SfRating >= 17.4.0.53",
+      "Xam.Plugin.Connectivity >= 3.2.0",
+      "Xam.Plugins.Notifier >= 3.0.1",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.3.0.908675"
     ]
@@ -1058,6 +2757,62 @@
     "frameworks": {
       "xamarinios10": {
         "dependencies": {
+          "Microsoft.Net.Http": {
+            "target": "Package",
+            "version": "[2.2.29, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
+          },
+          "Syncfusion.Xamarin.Buttons": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.Cards": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.Core": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.DataSource": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.SfChart": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.SfComboBox": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.SfListView": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.SfNavigationDrawer": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.SfProgressBar": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Syncfusion.Xamarin.SfRating": {
+            "target": "Package",
+            "version": "[17.4.0.53, )"
+          },
+          "Xam.Plugin.Connectivity": {
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
+          "Xam.Plugins.Notifier": {
+            "target": "Package",
+            "version": "[3.0.1, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.3.1, )"
