@@ -20,7 +20,7 @@ namespace CoronaDoctor
         public App()
         {
             //Register Syncfusion license
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjIwMjg0QDMxMzcyZTM0MmUzMG0vT1RxSEtPUnh5bGE4QXFyU1UzMTFEYU40anRGRExkTDhqa3FFamVVTE09");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("");
             InitializeComponent();
             random = new Random();
             coronaService = new CoronaService();
