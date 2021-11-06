@@ -15,7 +15,7 @@ namespace CoronaDoctor.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjIwMjg0QDMxMzcyZTM0MmUzMG0vT1RxSEtPUnh5bGE4QXFyU1UzMTFEYU40anRGRExkTDhqa3FFamVVTE09");
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("");
             
             LocalNotificationsImplementation.NotificationIconId = Resource.Mipmap.icon;
             TabLayoutResource = Resource.Layout.Tabbar;
